@@ -1,0 +1,203 @@
+body {
+    background-color: #750804;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4a0502;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ffeed8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #290504;
+}
+
+h1 {
+    font-size: 10.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Luxurious Script', cursive;
+    color: #ffeed8;
+}
+
+.container h1 {
+    font-size: clamp(9rem, 5vw, 3rem);
+}
+
+.text-content h1 {
+    margin-bottom: 0%;
+}
+
+.text-content p {
+    margin-top: 0%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    color:#ffeed8;
+    font-size: 25px;
+}
+
+.myphoto {
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 0%;
+}
+
+.text-content {
+    max-width: 700px;
+    padding: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        gap: 20px; 
+    }
+
+    .myphoto {
+        width: 40%; 
+        max-width: 350px;
+        margin-bottom: 0;
+    }
+
+    .text-content {
+        max-width: 55%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .myphoto {
+        width: 45%; 
+        max-width: 400px;
+    }
+
+    .text-content {
+        max-width: 50%;
+    }
+}
+
+.experience-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .experience-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stscho, .teatro, .deus, .kasa {
+    background-color: #ffeed8;
+    border: 2px solid #ffeed8;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.stscho h2, .teatro h2, .deus h2, .kasa h2 {
+    font-size: 22px;
+    color: #4a0502;
+    margin-bottom: 10px;
+}
+
+.stscho ul, .teatro ul, .deus ul, .kasa ul {
+    padding-left: 20px;
+}
+
+.stscho li, .teatro li, .deus li, .kasa li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 1024px) {
+    .experience-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .stscho, .teatro, .deus, .kasa {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+#playPauseButton {
+    background-color: #4a0502;
+    border: none;
+    color: white;
+    padding: 20px 40px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px; 
+    font-family: 'Playfair Display', serif;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+    display: block; 
+}
+
+
+.bgm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+#playPauseButton:hover {
+    background-color: #670702;
+}

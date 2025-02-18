@@ -1,0 +1,214 @@
+body {
+    font-family: Playfair Display;
+    background-color:#750804;
+    color: #4f0503;
+    text-align: center;
+    margin: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4a0502;
+  }
+  
+  li {
+    float: left;
+    font-size: 16px;
+  }
+  
+  li a {
+    display: block;
+    color: #ffeed8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #290504;
+  }
+
+h1{
+    font-family: Luxurious Script;
+    color: #ffeed8;
+    font-size: 90px;
+    margin-bottom: 0%;
+}
+
+
+table {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffeed8;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #750804;
+    color: #ffeed8
+}
+
+.bookingform {
+    background: #ffeed8;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.bookingform h1 {
+    text-align: center;
+    color: #750804;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #750804;
+    color: #ffeed8;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 200px; 
+    margin: 15px auto 0; 
+    display: block; 
+    text-align: center;
+    font-family: Luxurious Script;
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: #4a0502;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .bookingform {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    input[type="text"], input[type="email"] {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 16px;
+    }
+}
+
+#fname {
+    width: 90%;
+}
+
+#lname {
+    width: 90%;
+}
+
+#mname {
+    width: 90%;
+}
+
+#birthdate {
+    width: 90%;
+}
+
+#email{
+    width: 90%;
+}
+
+#Address{
+    width: 90%;
+}
+
+#number{
+    width: 90%;
+}
+
+
+.radioLeft {
+    text-align: left;
+    display: block;
+}
+
+.radioLeft input {
+    margin-left: 0;
+}
+
+.examplescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.examplescontainer div {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 300px; 
+    text-align: center;
+    background-color: #ffeed8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.examplescontainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 900px) {
+    .examplescontainer div {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 600px) {
+    .examplescontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .examplescontainer div {
+        flex: 1 1 100%; 
+        max-width: 100%; 
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deni's Portfolio</title>
+    <link rel="stylesheet" href="bookingcss.css">
+</head>
+<body>
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href= "aboutme.html">About Me</a></li>
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li style="float:right"><a class="active" href="https://www.canva.com/design/DAGfblkKmt4/ziwtlzLshDojnn_Mk_Nx5w/edit?utm_content=DAGfblkKmt4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">My Resume</a></li>
+</ul>
+
+<script src="bookingjs.js"></script>
+
+<h1>Rates</h1>
+<table>
+    <tr>
+        <th>Service</th>
+        <th>Duration</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Bridal Makeup</td>
+        <td>2 hours</td>
+        <td>₱2,000</td>
+    </tr>
+    <tr>
+        <td>Party Makeup</td>
+        <td>1.5 hours</td>
+        <td>₱1,250</td>
+    </tr>
+    <tr>
+        <td>Photoshoot Makeup</td>
+        <td>2 hours</td>
+        <td>₱1,500</td>
+    </tr>
+    <tr>
+        <td>Casual Makeup</td>
+        <td>1 hour</td>
+        <td>₱750</td>
+    </tr>
+</table>
+<br>
+<div class="examplescontainer">
+    <div class="bridal">
+        <img src="bridal.png" alt="bridal makeup">
+        <h2>Bridal</h2>
+    </div>
+    <div class="party">
+        <img src="party.png" alt="party makeup">
+        <h2>Party</h2>
+    </div>
+    <div class="photoshoot">
+        <img src="photoshoot.png" alt="photoshoot makeup">
+        <h2>Photoshoot</h2>
+    </div>
+    <div class="casual">
+        <img src="casual.png" alt="casual makeup">
+        <h2>Casual</h2>
+    </div>
+</div>
+
+<h1>Get Painted</h1>
+<div class="bookingform">
+    <h2>&#127915; <i>Let's Get You Glammed Up!</i></h2>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        
+        <label for="mname">Middle name:</label><br>
+        <input type="text" id="mname" name="mname"><br>
+        
+        <label for="birthdate">Birthdate:</label><br>
+        <input type="text" id="birthdate" name="birthdate"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="number">Contact Number:</label><br>
+        <input type="text" id="number" name="number"><br>
+        
+       <h2><i>Which type of look would you like to book for?</i></h2>
+        <label for="appointmentoptions">Kindly choose 1:</label>
+        <select id="appointmentoptions" name="appointmentoptions">
+        <option value="option1">Choose an Look</option>
+        <option value="option2">Casual Makeup</option>
+        <option value="option3">Photoshoot Makeup</option>
+        <option value="option4">Party Makeup</option>
+        <option value="option5">Bridal Makeup</option>
+        </select>
+
+        <h2><i>Would you like to be home serviced?</i></h2>
+        <div class="radioLeft">
+            <label for="choice" id="yesnobut">Where would you like your appointment to be?</label><br>
+            <input type="radio" id="homeserviced" name="choice" value="homeserviced">Yes, I would like to have my appointment at home.<br>
+            <input type="radio" id="studiobooking" name="choice" value="studiobooking">No, I'll be going to your studio.<br>
+            <input type="radio" id="venueservice" name="choice" value="venueservice">I'd like you to come to my event venue.<br>
+        </div>
+        <br>
+        <label for="Address">Address:</label>
+        <textarea id="Address" name="Address" rows="4" cols="50" placeholder="Please enter your address here:"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
